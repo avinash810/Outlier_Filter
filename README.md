@@ -27,7 +27,6 @@ python3 remove_outliers.py Test_Wind_Data_1.csv
 
 Results should look like this: 
 
-![Raw_Data_Test2](https://github.com/user-attachments/assets/42116dc7-683e-402d-bb6e-06b7881be0dd)
-![Filtered_Data_Test2](https://github.com/user-attachments/assets/54e06de9-fa45-47ab-8fee-7c46e2b44840)
+![Raw_Data_Test2](https://github.com/user-attachments/assets/42116dc7-683e-402d-bb6e-06b7881be0dd) ![Filtered_Data_Test2](https://github.com/user-attachments/assets/54e06de9-fa45-47ab-8fee-7c46e2b44840)
 
 
