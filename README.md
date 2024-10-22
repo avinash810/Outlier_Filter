@@ -7,7 +7,9 @@ Originally designed to filter 3D Wind Data from a TriSonica Sphere Anemometer fl
 
 The Anemometer measurses wind U, V and W component vectors at 10 Hz. This flown on a UAV results in a noisy, non-stationary dataset. 
 The noise in the signal is an important measurment of turbulance and needs to be conserved as much as possible. 
-The sensor would occasionally return magnitudes that were clearly too large to be a valid wind reading. Outlier Points. This could be from a communication error. Not certian on the cause. 
+The sensor would occasionally return magnitudes that were clearly too large to be a valid wind reading. Outlier Points. This could be from a communication error. Not certian on the cause. Here is an example: 
+![Raw_Data_Test1](https://github.com/user-attachments/assets/a8478ae2-4226-49f1-b633-3348a1784d9d)
+
 
 Smoothing algorithms will not work well to filter this data. Common statistical filters like z-scores or IQR filters take away too many data points. So the design of this filter came about. 
 
@@ -24,5 +26,8 @@ python3 remove_outliers.py Test_Wind_Data_1.csv
 ```
 
 Results should look like this: 
+
+![Raw_Data_Test2](https://github.com/user-attachments/assets/42116dc7-683e-402d-bb6e-06b7881be0dd)
+![Filtered_Data_Test2](https://github.com/user-attachments/assets/54e06de9-fa45-47ab-8fee-7c46e2b44840)
 
 
