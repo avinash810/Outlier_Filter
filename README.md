@@ -21,9 +21,9 @@ This 3-point Moving Window filter looks at points before and after it and decide
 The filter works by first transforming the data into a stationary timeseries by differencing the column of interest. The mean of the resulsting column is a good capture of the variability of the signal, or the noise of the signal or in this case of wind data, it is the time rate of change of sampled wind mangiute at 10 Hz. This mean multipled by a user chosen scale factor defines the threshold for the filtering algorithm.
 Reccomened using a scale of **10x-20x** the mean of the diff() column. 
 
-To run: 
+Code expects the csv file as the second argument to the run command. For example from a Linux Terminal: 
 ```
-python3 remove_outliers.py Test_Wind_Data_1.csv
+python3 remove_outliers.py Test_Wind_Data1.csv
 
 ```
 
