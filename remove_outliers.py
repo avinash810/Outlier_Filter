@@ -45,7 +45,7 @@ else:
 df = pd.read_csv(csv_file)
 
 # Put desired column here
-column = "COL"
+column = "Mag"
 
 
 # Choose the threshold scale here.
@@ -106,7 +106,6 @@ print('*******************************')
 Meanest = (abs(df_filtered[column].diff()) ).mean()
 
 print("MEAN of Diff = ",Meaner)
-print("MODE of Diff = ",Moder)
 print("MEAN of Filtered Diff = ",Meanest)
 
 plt.show()
